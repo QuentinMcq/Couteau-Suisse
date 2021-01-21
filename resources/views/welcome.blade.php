@@ -27,15 +27,20 @@
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
 
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:pt-0">
+            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8 mb-5" >
+                <div class="flex justify-center pt-8 sm:pt-0 mb-5">
                     <img src="{{asset('images/artois.png')}}" alt="Logo de l'université d'artois" style="height: 10rem; margin-top: 10%">
                 </div>
 
                 @auth
                     <div class="flex justify-center mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg h2 text-center">
+                        <button class="sr-only">Accédez aux différentes fonctionnalités de l'ENT de l'Université d'Artois ! </button>
 
-                        <div> Accédez aux différentes fonctionnalités de l'ENT de l'Université d'Artois ! </div>
+                        <div>
+                            <button class="sr-only">Accédez aux différentes fonctionnalités de l'ENT de l'Université d'Artois !
+                            </button>
+                            Accédez aux différentes fonctionnalités de l'ENT de l'Université d'Artois !
+                        </div>
 
                     </div>
                     <div class="flex justify-center mt-4 sm:items-center ">
@@ -44,8 +49,8 @@
                     </div>
                 @else
                     <div class="flex justify-center mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg h2 text-center">
-
-                        <div>Connecter vous pour accéder aux différentes fonctionnalités de l'ENT de l'Université d'Artois ! </div>
+                        <div> Connectez vous pour accéder aux différentes fonctionnalités de l'ENT de l'Université d'Artois ! </div>
+                        <button class="sr-only">Connectez vous pour accéder aux différentes fonctionnalités de l'ENT de l'Université d'Artois ! </button>
 
                     </div>
                     <div class="flex justify-center mt-4 sm:items-center ">

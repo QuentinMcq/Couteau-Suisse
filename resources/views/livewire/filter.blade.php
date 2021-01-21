@@ -28,7 +28,8 @@
                                         @if ($new->url != null)
                                             <p class="text-muted font-italic">Cette actualité inclue une vidéo.</p>
                                         @endif
-                                        <p class="text-muted">Ajoutée le {{ $new->created_at->format('d/m/y à H:m') }}</p>
+                                        <p class="text-muted">Ajoutée
+                                            le {{ $new->created_at->format('d/m/y à H:m') }}</p>
                                         <a href="{{url('new/' . $new->id)}}" class="btn btn-success">
                                             Plus de détails
                                         </a>
@@ -38,16 +39,13 @@
                     @endforeach
                 </div>
 
-                <div class="container mt-5" style="text-align: center">
+                <div class="container mt-5 pb-4" style="text-align: center">
                     <div class="format">
                         {{$news->links('livewire.pagination')}}
                     </div>
                 </div>
-
-                <br>
-                <br>
-
         </div>
+
 @else
     <div class="container-fluid">
         <label class="mt-3">
@@ -78,7 +76,8 @@
                                         @if ($new->url != null)
                                             <p class="text-muted font-italic">Cette actualité inclue une vidéo.</p>
                                         @endif
-                                        <p class="text-muted">Ajoutée le {{ $new->created_at->format('d/m/y à H:m') }}</p>
+                                        <p class="text-muted">Ajoutée
+                                            le {{ $new->created_at->format('d/m/y à H:m') }}</p>
                                         <a href="{{url('new/' . $new->id)}}" class="btn btn-success">
                                             Plus de détails
                                         </a>
@@ -88,22 +87,17 @@
                     @endforeach
                 </div>
 
-                <div class="container mt-5" style="text-align: center">
+                <div class="container mt-5 pb-4" style="text-align: center">
                     <div class="format">
                         {{$news->links('livewire.pagination')}}
                     </div>
                 </div>
-
-                <br>
-                <br>
-
         </div>
-@endif
+        @endif
+    </div>
 
-
-
-<style>
-    .format {
-        display: inline-block;
-    }
-</style>
+    <style>
+        .format {
+            display: inline-block;
+        }
+    </style>

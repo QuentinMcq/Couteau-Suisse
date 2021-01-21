@@ -70,11 +70,11 @@
                 </div>
 
             <div class="modal-footer">
-                <button id="close" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="close" type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                 @if(auth()->user()->personnel=="non")
-                    <button id="btnmodifier" type="button" class="btn btn-primary">Save</button>
+                    <button id="btnmodifier" type="button" class="btn btn-primary">Sauvegarder</button>
                 @elseif(auth()->user()->personnel=="oui")
-                    <button id="btnmodifier" type="button" class="btn btn-primary" >Save</button>
+                    <button id="btnmodifier" type="button" class="btn btn-primary" >Sauvegarder</button>
                 <button id="btnsupprimer" type="button" class="btn btn-danger" >Supprimer</button>
                 @endif
 
@@ -102,9 +102,9 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button id="closeDispo" type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                        <button id="closeDispo" type="button" class="btn btn-secondary" data-dismiss="modal">Fermer
                         </button>
-                        <button id="saveDispo" type="button" class="btn btn-primary">Save</button>
+                        <button id="saveDispo" type="button" class="btn btn-primary">Sauvegarder</button>
                     </div>
                 @else
                     <div class="modal-body">
@@ -113,7 +113,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button id="closeDispo" type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                        <button id="closeDispo" type="button" class="btn btn-secondary" data-dismiss="modal">Fermer
                         </button>
 
                     </div>

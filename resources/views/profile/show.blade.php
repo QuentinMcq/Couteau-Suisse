@@ -2,7 +2,10 @@
     <x-slot name="header">
         <title>Couteau Suisse | Profile</title>
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Profile') }}
+            <button class="sr-only">
+                Profil
+            </button>
+            {{ __('Profil') }}
         </h2>
     </x-slot>
 

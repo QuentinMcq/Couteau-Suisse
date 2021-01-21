@@ -2,6 +2,7 @@
     <x-slot name="header">
         <title>Couteau Suisse | Actualités</title>
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            <button class="sr-only">Actualités</button>
             {{ __('Actualités') }}
         </h2>
     </x-slot>

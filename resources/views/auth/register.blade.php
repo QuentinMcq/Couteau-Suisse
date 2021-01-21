@@ -53,7 +53,7 @@
                 <label for="non">Non</label>
             </div>
             <div class="mt-4">
-                <x-jet-label value="{{ __('Personnel') }}"></x-jet-label>
+                <x-jet-label value="{{ __('Vous faites partie du personnel') }}"></x-jet-label>
             </div>
             <div>
                 <input type="radio" id="ouiPersonnel" name="personnel" value="oui"
@@ -67,7 +67,7 @@
                 <label for="nonPersonnel">Non</label>
             </div>
 
-            <div class="flex items-center justify-end mt-4">
+            <div class="flex items-center justify-center mt-4">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
                     {{ __('Déja inscrit ? Connectez-vous') }}
                 </a>

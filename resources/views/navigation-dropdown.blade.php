@@ -10,7 +10,7 @@
                     </a>
                 </div>
 
-                <!-- Navigation Links -->
+
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link href="{{ route('news.index') }}" :active="request()->routeIs('news.index')">
                         {{ __('Actualités') }}
@@ -20,12 +20,11 @@
                         {{ __('Ent') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('ent.rendez_vous') }}" :active="request()->routeIs('ent.rendez_vous')">
-                        {{ __('Rendez-vous') }}
+                        {{ __('Rendez vous') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('ent.agenda') }}" :active="request()->routeIs('ent.agenda')">
                         {{ __('Agenda') }}
                     </x-jet-nav-link>
-
                 </div>
             </div>
 
@@ -53,11 +52,11 @@
                     <x-slot name="content">
                         <!-- Account Management -->
                         <div class="block px-4 py-2 text-xs" style="font-weight: bold">
-                            {{ __('Manage Account') }}
+                            {{ __('Gestion du compte') }}
                         </div>
 
                         <x-jet-dropdown-link href="{{ route('profile.show') }}">
-                            {{ __('Profile') }}
+                            {{ __('Profil') }}
                         </x-jet-dropdown-link>
 
                         @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
@@ -106,7 +105,7 @@
                             <x-jet-dropdown-link href="{{ route('logout') }}"
                                                  onclick="event.preventDefault();
                                                             this.closest('form').submit();">
-                                {{ __('Logout') }}
+                                {{ __('Se déconnecter') }}
                             </x-jet-dropdown-link>
                         </form>
                     </x-slot>
@@ -134,6 +133,12 @@
 
             <x-jet-responsive-nav-link href="{{ route('ent.home') }}" :active="request()->routeIs('ent.home')">
                 {{ __('Ent') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('ent.rendez_vous') }}" :active="request()->routeIs('ent.rendez_vous')">
+                {{ __('Rendez vous') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('ent.agenda') }}" :active="request()->routeIs('ent.agenda')">
+                {{ __('Agenda') }}
             </x-jet-responsive-nav-link>
         </div>
 

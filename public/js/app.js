@@ -19399,8 +19399,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /mnt/c/Users/Quentin/Documents/LP DIOC/S5/Info/Projets S5/Projet 2/couteau-suisse/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /mnt/c/Users/Quentin/Documents/LP DIOC/S5/Info/Projets S5/Projet 2/couteau-suisse/resources/css/app.css */"./resources/css/app.css");
+__webpack_require__(/*! /mnt/c/Users/Quentin/Documents/couteau-suisse/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /mnt/c/Users/Quentin/Documents/couteau-suisse/resources/css/app.css */"./resources/css/app.css");
 
 
 /***/ })
